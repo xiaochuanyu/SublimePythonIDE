@@ -1,6 +1,7 @@
-**SublimePythonIDE**
+**Python IDE**
 ===========================
-This plugin adds Python completions and some IDE-like functions to Sublime Text 3, through the use of the Rope library.
+This Sublime Text plugin adds Python auto-completions, and linting functions to Sublime Text 3, through the use of the Rope and pyflakes.
+
 It is a complete rewrite of SublimeRope for ST2. It should be a lot faster and easier to use than SublimeRope was.
 
 In contrast to SublimeRope, it does use the built in Python only for UI-related functions, the completions and refactorings
@@ -10,6 +11,8 @@ Everything your projects interpreter sees, should be visible to SublimePython ->
 
 I also added a lot caching throughout the underlying Rope library which improved completion performance by several orders of magnitude. I hope no functionality breaks because of this ;-)
 
+Easiest way is to install to first install [Package Control](https://sublime.wbond.net/) and then search for "Python IDE".
+To install manually, as with all ST packages, copy this file into your Packages/User folder and editing the copy there.
 
 Configuration
 -------------
@@ -48,7 +51,9 @@ In cases where the project directory is outside of your root python module, you 
         }
     }
 
-See Packages/SublimePythonIDE/SublimePython.sublime-settings for other options. As with all ST packages, copy this file into your Packages/User folder and editing the copy there.
+
+
+See Packages/SublimePythonIDE/SublimePython.sublime-settings for other options.
 
 Copyright (C) 2013 Julian Eberius
 
